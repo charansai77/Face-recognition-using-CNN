@@ -1,4 +1,4 @@
-HTML
+HTML......
 <!doctype html>
 <html lang="en">
  <head>
@@ -116,7 +116,7 @@ HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgr
 km" crossorigin="anonymous"></script>
 </body>
 </html>
-Get Faces From Camera
+Get Faces From Camera.......
 import dlib
 import numpy as np
 import cv2
@@ -139,7 +139,6 @@ class Face_Register:
  self.win.title("Face Register")
  # PLease modify window size here if needed
  self.win.geometry("1000x500")
-40
  # GUI left part
  self.frame_left_camera = tk.Frame(self.win)
  self.label = tk.Label(self.win)
@@ -181,7 +180,6 @@ text=str(self.existing_faces_cnt))
  self.start_time = time.time()
  self.cap = cv2.VideoCapture(0) # Get video stream from camera
  # self.cap = cv2.VideoCapture("test.mp4") # Input local video
-41
  # Delete old face folders
  def GUI_clear_data(self):
  # "/data_faces_from_camera/person_x/"...
@@ -225,7 +223,6 @@ sticky=tk.W, padx=5, pady=20)
  text='Clear',
  command=self.GUI_clear_data).grid(row=6, column=0, columnspan=3,
 sticky=tk.W, padx=5, pady=2)
-42
  # Step 2: Input name and create folders for face
  tk.Label(self.frame_right_info,
  font=self.font_step_title,
@@ -268,7 +265,6 @@ pady=20)
  person_num_list.append(int(person_order))
  self.existing_faces_cnt = max(person_num_list)
  # Start from person_1
-43
  else:
  self.existing_faces_cnt = 0
  # Update FPS of Video stream
